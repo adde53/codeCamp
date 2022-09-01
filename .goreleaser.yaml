@@ -1,4 +1,4 @@
-project_name: codeCamp
+project_name: code_camp22
 env_files:
   # This should point to the file where the github access token is stored
   github_token: /Users/andols/.ssh
@@ -12,19 +12,19 @@ builds:
       - CGO_ENABLED=0
     goos:
       - linux
-    id: codeCamp
-    main: ./cmd/codeCamp  
-    binary: codeCamp
+    id: code_camp22
+    main: ./cmd/code_camp22  
+    binary: code_camp22
 
 release:
   disable: true
 
 dockers:
   # Change image template to the name of your docker repository
-  - image_templates: [ "571908524012.dkr.ecr.eu-north-1.amazonaws.com/adde53/codeCamp:{{ .Tag }}"]
+  - image_templates: [ "571908524012.dkr.ecr.eu-north-1.amazonaws.com/adde53/code_camp22:{{ .Tag }}"]
     dockerfile: docker/Dockerfile
     goos: linux
     goarch: amd64
     ids:
-    - codeCamp
+    - code_camp22
     skip_push: false

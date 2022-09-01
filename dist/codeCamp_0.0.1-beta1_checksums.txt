@@ -1,0 +1,3 @@
+8af8c2323d27a4d055ced8289dd5382c5ee8497ddc82daf8734ecb3d10ea79a3  code_camp22_0.0.1-beta1_linux_386.tar.gz
+93fdaa867c609fb8291d4199db466009b027e0dd062e624e6508bf498b24c15b  code_camp22_0.0.1-beta1_linux_amd64.tar.gz
+972368c5297a612b3dfc110f9211a71bf5a4f631a1c7e50e521e8b162c40ea6d  code_camp22_0.0.1-beta1_linux_arm64.tar.gz

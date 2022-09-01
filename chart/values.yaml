@@ -7,8 +7,8 @@ imageCredentials:
 
 
 images:
-    codeCamp:
-    name: codeCamp
+    code_camp22:
+    name: code_camp22
     tag: 0.0.1-beta1
 
 

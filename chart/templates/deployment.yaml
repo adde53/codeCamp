@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "sinch.cc2022.codeCamp.fullname" . }}
+  name: {{ include "sinch.cc2022.code_camp22.fullname" . }}
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{ template "sinch.cc2022.codeCamp.fullname" . }}
+      app.kubernetes.io/name: {{ template "sinch.cc2022.code_camp22.fullname" . }}
   replicas: {{ .Values.replicaCount }}
   template:
     metadata:
       labels:
-{{ include "sinch.cc2022.codeCamp.labels" . | indent 8 }}
+{{ include "sinch.cc2022.code_camp22.labels" . | indent 8 }}
     spec:
       imagePullSecrets:
       - name: {{ .Values.imageCredentials.registry.pullSecret }}
       containers:
-        - name: codeCamp
-          image: {{ template "sinch.cc2022.codeCamp.registryUrl" . }}/{{ .Values.imageCredentials.repoPath }}/{{ .Values.images.codeCamp.name }}:{{ tpl .Values.images.codeCamp.tag . }}
+        - name: code_camp22
+          image: {{ template "sinch.cc2022.code_camp22.registryUrl" . }}/{{ .Values.imageCredentials.repoPath }}/{{ .Values.images.code_camp22.name }}:{{ tpl .Values.images.code_camp22.tag . }}
           imagePullPolicy: {{ .Values.imageCredentials.registry.imagePullPolicy }}
           ports:
             - containerPort: 8080
