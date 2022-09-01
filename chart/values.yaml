@@ -3,12 +3,12 @@ imageCredentials:
     url: 571908524012.dkr.ecr.eu-north-1.amazonaws.com
     imagePullPolicy: IfNotPresent
     pullSecret: regcred
-  repoPath: add53  
+  repoPath: adde53  
 
 
 images:
-    code_camp22:
-    name: code_camp22
+  codecamp22:
+    name: codecamp22
     tag: 0.0.1-beta1
 
 
