@@ -2,7 +2,7 @@ project_name: code_camp22
 release:
   github:
     owner: adde53
-    name: code_camp22
+    name: codeCamp
   disable: true
   name_template: '{{.Tag}}'
 scoop:
