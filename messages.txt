@@ -1,0 +1,1 @@
+username : tjaba, password : tjaba, from : 07123123, to: 101010101, text : Hallojken!
